@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<main id="main">
+  <header>
+  <h1 id="title"> Jimi Hendrix </h1>
+  <h2 id="subtitle"> (1942-1970) </h2>
+  <br>
+  </header>
+  <p> The guy who revolutionized the way of playing guitar </p>
+  <figurecaption id="img-div">
+    <img id="image" src="https://i.pinimg.com/originals/be/15/1c/be151c285ddff51eac7b4a60088e1039.jpg" alt="Jimi Hendrix at Woodstock concert, in 1969.">
+    <br>
+   <figurecaption id="img-caption"> Jimi Hendrix on stage at Woodstock in 1969, playing his classical white left-handed  Fender-Stratocaster electric guitar.
+    </figurecaption>
+    <section id="tribute-info">
+      <h3 id="headline"> Here's a time line of Jimi's life and musical career: </h3>
+      <div id="tx_strat">
+      <ul>
+        <li><strong>1942</strong> - Born in Seattle, USA; 
+        </li>
+        <li><strong>1963</strong> - Moves to New York, where he plays with Little Richard; 
+        </li>
+        <li><strong>1965</strong> - Found his first band, "Jimmy James and The Blues Flames"; 
+        </li>
+        <li><strong>1966</strong> - Meets Chas Chandler (The Animals bassist) and moves to London; 
+        </li>
+        <li><strong>1967</strong> - Found two more bands: "Jimi Hendrix Experience" and "Band of Gypsys"; 
+        </li>
+        <li><strong>1967</strong> - Release his first album, "Are you experienced?"; 
+        </li>
+        <li><strong>1967</strong> - Release his second album, "Axis: Bold as Love"; 
+        </li>
+        <li><strong>1968</strong> - The third one, "Electric Ladyland"; 
+        </li>
+        <li><strong>1969</strong> - Perfoms at Woodstock festival; 
+        </li>
+        <li><strong>1970</strong> - Dies in London, at age of 27; 
+        </li>
+      </ul>
+      <img id="strat" src="https://www.fender.com.br/imgs/produtos/details/fender_10171374.png" alt="Hendrix White Fender Stratocaster">
+      </div>
+      <div id="quote">
+        <p>"Blues are easy to play, but hard to feel"<p>
+        <p>- James Marshal Hendrix</p>
+       </div>
+      <footer>
+      <h3> For more information about Hendrix's Genius, be free to check-out his
+        <a id="tribute-link" href="https://en.wikipedia.org/wiki/Jimi_Hendrix" target="_blank"> Wikipedia page</a>.
+      </h3>
+      </footer>
+      </section>
+</main>
+
+<style>
+html{
+  font-size: 10px;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+  margin: 0;
+  background-image: url("https://st.depositphotos.com/1004216/1376/v/950/depositphotos_13766330-stock-illustration-blue-musical-background-with-notes.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+header{
+  line-height: 0.5;
+}
+footer{
+  line-height: 3;
+}
+h1{
+  font-size: 3.5rem;
+}
+h2{
+  font-size: 2.5rem;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+#main {
+  margin: 20px 8px;
+  padding: 5px;
+}
+#headline{
+  text-align: justify;
+  margin-left: 20px;
+}
+ul{
+  margin-left: 0px;
+  text-align: justify;
+  line-height: 2;
+}
+#quote{
+  line-height:0.2;
+  text-align: right;
+  font-style: italic;
+}
+#strat{
+  opacity: 0.15;
+}
+#tx_strat{
+  margin: 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 200px;
+}
+#strat:hover{
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes opacity{
+  100%{
+    opacity: 1;
+  }
+}
+</style>
